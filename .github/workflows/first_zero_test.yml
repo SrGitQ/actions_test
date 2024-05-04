@@ -8,5 +8,5 @@ jobs:
   explorando-mas:
     runs-on: ubuntu-latest
     steps:
-      run: echo "Hello world"
-      run: ls
+      - run: echo "Hello world"
+      - run: ls
