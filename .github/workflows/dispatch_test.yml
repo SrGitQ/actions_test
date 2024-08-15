@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo mi_parametro
-        run: echo "El valor de mi_parametro es: ${{ github.event.inputs.mi_parametro }}"
+        run: echo "El valor de mi_parametro es ${{ github.event.inputs.mi_parametro }}"
