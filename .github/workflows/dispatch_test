@@ -1,0 +1,16 @@
+name: Mi Workflow Manual
+
+on:
+  workflow_dispatch:
+    inputs:
+      mi_parametro:
+        description: 'Ingresa un valor para mi_parametro'
+        required: true
+        default: 'valor por defecto'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo mi_parametro
+        run: echo "El valor de mi_parametro es: ${{ github.event.inputs.mi_parametro }}"
